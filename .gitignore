@@ -1,0 +1,13 @@
+# Object Files
+.o
+.obj
+
+# Libraries
+*.a
+*.lib
+*.so
+*.dylib
+
+# Dub
+.dub/
+__test__*__
