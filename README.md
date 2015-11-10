@@ -21,6 +21,11 @@ Drake is a basic IRC bot that im working on to coincide with myself learning [Dl
 - [ ] Play "guess what? Chicken butt" ( Because why not? )
 - [ ] Simple response when name is mentioned ( i.e. Display list of commands when "Drake help" is mentioned etc )
 
+**Things I'd like to implement in the future**:
+
+- [ ] Control via web panel?
+- [ ] public stats via web panel?
+
 
 
 ---
