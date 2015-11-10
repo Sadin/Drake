@@ -1,6 +1,6 @@
 # Object Files
-.o
-.obj
+*.o
+*.obj
 
 # Libraries
 *.a
@@ -11,3 +11,6 @@
 # Dub
 .dub/
 __test__*__
+
+#Binary
+./bot
