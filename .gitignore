@@ -8,9 +8,5 @@
 *.so
 *.dylib
 
-# Dub
-.dub/
-__test__*__
-
 #Binary
 ./bot
