@@ -1,5 +1,6 @@
 import std.stdio;
 import std.socket;
+import std.datetime;
 
 class Connection
 {
@@ -33,4 +34,5 @@ void main()
     // Print out default connection details
 
     writeln("Connecting too ", freenode.address, " at port ", freenode.port);
+
 }
