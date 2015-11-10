@@ -1,12 +1,13 @@
 import std.stdio;
 import std.socket;
 
-class Server
+class Connection
 {
   public:
     int port;
     string address;
     string channel;
+    string nick;
 
 }
 
@@ -20,9 +21,16 @@ void main()
     writeln("|____/|_|  \\__,_|_|\\_\\___| |____/ \\___/ \\__|");
     writeln();
 
-    Server Server1 = new Server();
+    Connection freenode = new Connection();
+
+    // Declare default server connection information
+
+    freenode.port = 6667;
+    freenode.address = "irc.freenode.net";
+    freenode.channel = "##Codice";
+    freenode.nick = "Codice-Drakebot";
 
     // Print out default connection details
 
-    //writeln("Connecting too ", address, " at port ", port);
+    writeln("Connecting too ", freenode.address, " at port ", freenode.port);
 }
