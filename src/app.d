@@ -1,4 +1,5 @@
 import vibe.d;
+import bot.core;
 import std.stdio, std.socket, std.socketstream, std.conv, std.string, std.datetime;
 
 void main()
@@ -10,21 +11,22 @@ void main()
     writeln("|____/|_|  \\__,_|_|\\_\\___| |____/ \\___/ \\__|");
     writeln();
 
-    Connection Connection1 = new Connection();
+    Bot Connection1 = new Bot();
 
     // Declare default server connection information
-    Connection1.address = "irc.freenode.net";
+    Connection1.server = "irc.freenode.net";
     Connection1.channel = "##Codice";
-    Connection1.nick = "Codice-Drakebot";
+    Connection1.port = 6667;
+    Connection1.nickname = "Codice-Drakebot";
 
     // Print out default connection details
 
-    writeln("Connecting too ", Connection1.address, " at port 6667");
+    writeln("Connecting too ", Connection1.server, Connection1.port);
 
-    auto address = getAddress(Connection1.address, 6667);
+    auto address = getAddress(Connection1.server, Connection1.port);
 }
 
-class bot
+class Bot
 {
   public:
     ushort port;
@@ -33,8 +35,10 @@ class bot
     string username;
     string realname;
 
-    string[] channels;
+    string channel;
     string prefix;
+
+    // if no name supplied, try system username
 
     void normalize()
         {
