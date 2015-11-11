@@ -1,13 +1,17 @@
 import vibe.d;
 import std.stdio, std.socket, std.socketstream, std.conv, std.string, std.datetime;
 
-class Connection
+class bot
 {
   public:
-    int port;
-    string address;
-    string channel;
-    string nick;
+    ushort port;
+    string server;
+    string nickname;
+    string username;
+    string realname;
+
+    string[] channels;
+    string prefix;
 
 }
 
