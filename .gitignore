@@ -9,4 +9,6 @@
 *.dylib
 
 #Binary
-./bot
+./drake
+drake
+.dub
