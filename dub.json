@@ -1,0 +1,11 @@
+{
+	"name": "drake",
+	"description": "A basic IRC bot built on the vibe.d framework",
+	"copyright": "Copyright © 2015, Zach",
+	"authors": ["Sadin"],
+	"dependencies": {
+		"vibe-d": "~>0.7.23"
+	},
+	"versions": ["VibeCustomMain"],
+  "targetType": "none"
+}
