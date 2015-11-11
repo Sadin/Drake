@@ -26,7 +26,7 @@ dub
 ```
 
 
-As it stands the only external library utilized is [vibed](http://vibed.org/)   
+_As of 11/11/15 the only external library utilized is [vibed](http://vibed.org/)_  
 
 
 
