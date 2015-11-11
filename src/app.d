@@ -1,3 +1,4 @@
+import vibe.d;
 import std.stdio, std.socket, std.socketstream, std.conv, std.string, std.datetime;
 
 class Connection
