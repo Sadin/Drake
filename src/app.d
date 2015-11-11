@@ -1,20 +1,6 @@
 import vibe.d;
 import std.stdio, std.socket, std.socketstream, std.conv, std.string, std.datetime;
 
-class bot
-{
-  public:
-    ushort port;
-    string server;
-    string nickname;
-    string username;
-    string realname;
-
-    string[] channels;
-    string prefix;
-
-}
-
 void main()
 {
     writeln(" ____            _          ____        _   ");
@@ -36,4 +22,26 @@ void main()
     writeln("Connecting too ", Connection1.address, " at port 6667");
 
     auto address = getAddress(Connection1.address, 6667);
+}
+
+class bot
+{
+  public:
+    ushort port;
+    string server;
+    string nickname;
+    string username;
+    string realname;
+
+    string[] channels;
+    string prefix;
+
+    void normalize()
+        {
+            if (!username)
+                username = getUser();
+
+            if (!realname)
+                realname = nickname;
+        }
 }
